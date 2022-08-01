@@ -3,7 +3,7 @@ import React from 'react';
 const Portfolio = () => {
     return (
         <div>
-            <h1>this is sample of sdf Portfolio work</h1>
+            <h1>this is sample of Portfolio work</h1>
         </div>
     );
 };
