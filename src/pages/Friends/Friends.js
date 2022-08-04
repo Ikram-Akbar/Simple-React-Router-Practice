@@ -12,17 +12,23 @@ const Friends = () => {
   }, []);
 
   return (
-    <div>
-      <h1>My Friend are {friends.length}</h1>
-          <div className="container bg-dark">
-            <div className="row">
-              {friends.map((friend) => (
-                <Friend key={friend.id} friend={friend} />
-              ))}
-              ;
-            </div>
-          </div>
-        </div>
+    <Container>
+      <h2>MY friends list</h2>
+      <Row md={2} xs={1} lg={3}>
+        {friends.map((friend) => (
+          <Friend key={friend.id} friend={friend} />
+        ))}
+      </Row>
+    </Container>
+
+    // <div className="my-5 container">
+    //   <h1 className="text-primary text-center my-5">Experts</h1>
+    //   <div className="row justify-content-center">
+    //     {friends.map((friend) => (
+    //       <Friend key={friend.id} friend={friend} />
+    //     ))}
+    //   </div>
+    // </div>
   );
 };
 

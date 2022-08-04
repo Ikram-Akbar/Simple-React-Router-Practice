@@ -6,10 +6,12 @@ import About from "./pages/About/About";
 import Friends from "./pages/Friends/Friends";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import NotFound from "./pages/NotFound/NotFound";
+import Header from "./pages/Header/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
