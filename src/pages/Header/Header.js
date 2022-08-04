@@ -1,14 +1,15 @@
 import React from 'react';
 import {Link} from "react-router-dom"
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
       <div>
         <nav>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/friends">Friends</Link>
-                <Link to="/portfolio">Portfolio</Link>
+                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/about">About</CustomLink>
+                <CustomLink to="/friends">Friends</CustomLink>
+                <CustomLink to="/portfolio">Portfolio</CustomLink>
         </nav>
       </div>
     );
